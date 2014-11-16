@@ -99,7 +99,8 @@ var C4;
             this.birds = jQuery('.bird')[0];
             this.bird = [];
             var bird = jQuery('.bird li');
-            for (var a = 0; a < 69; a++) {
+            alert('Birds bird.length ' + bird.length);
+            for (var a = 0; a < bird.length; a++) {
                 this.bird.push(new C4.Bird(bird.eq(a)));
             }
         }

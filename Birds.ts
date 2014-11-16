@@ -6,7 +6,7 @@ module C4 {
         bird  : C4.Bird []  = []
         constructor() {
             var bird: JQuery = jQuery('.bird li')
-            for(var a = 0; a < 69; a ++) {
+            for(var a = 0; a < bird.length; a ++) {
                 this.bird.push( new C4.Bird(bird.eq(a)))
         } } 
         reset() {
