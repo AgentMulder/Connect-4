@@ -1,1 +1,1 @@
-tsc @files --target ES5 --out connect4.js
+tsc @files --target ES5 --removeComments --out connect4.js
