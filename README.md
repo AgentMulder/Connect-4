@@ -112,8 +112,4 @@ Background
        All code will be on GitHub soon
        
        2 0 1 4 - m b m u l d e r @ o n l i n e . n l
-  |\      _,,,-~-,,_           
-  /,`.-'`'    -.  ;-;;,_       
- |,4-  ) )-,_..;\ (  `'-'      
-'-~-'`(_/~-'  `-'\_)  
 
