@@ -3,11 +3,13 @@ Connect-4
 
 Classic Connect-4 game written entirely in HTML5, CSS and JavaScript, using TypeScript.  
 
-The resulting JavaScript code can be found in file connect4.js
+The resulting JavaScript code can be found in file "connect4.js"
 
 See http://www.sympad.nl/connect4/ for a working example
 
-See file index.html (or 'Background' below) for the rationale behind this program
+See file "index.html" (or "Background" below) for the rationale behind this program
+
+See file "files" for a listing of the TypeScript-files that constitute this project
 
 
 How to compile Connect-4
