@@ -90,7 +90,7 @@ Background
        
        The Model is defined in car part names, but does not really reflect the way a motor 
        works. Allthough there is a Cylinder where Fuel is set on Fire, causing Smoke. Just 
-       as        with the Peter Rabbit methaphore, parts are named after clearly recognizable 
+       as with the Peter Rabbit methaphore, parts are named after clearly recognizable 
        entities and preferably used as container to hold other parts, like the Motor-object 
        hat  contains a Cylinder, Fuel and Gear, but does nothing with it. Its sole task is 
        to hold on to its items and become part of the narration.
