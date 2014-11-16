@@ -3,7 +3,7 @@ Connect-4
 
 Classic Connect-4 game written entirely in HTML5, CSS and JavaScript, using TypeScript.  
 
-See http://www.sympad.nl/connect4/ for a working example
+See http://www.sympad.nl/connect4/ for the program in action
 
 See file "files" for a listing of the TypeScript-files that constitute this project
 
