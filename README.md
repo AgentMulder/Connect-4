@@ -7,9 +7,9 @@ The resulting JavaScript code can be found in file "connect4.js"
 
 See http://www.sympad.nl/connect4/ for a working example
 
-See file "index.html" (or "Background" below) for the rationale behind this program
-
 See file "files" for a listing of the TypeScript-files that constitute this project
+
+See file "index.html" (or "Background" below) for the rationale behind this program
 
 
 How to compile Connect-4
@@ -17,7 +17,7 @@ How to compile Connect-4
 
 Linux
 =====
-Copy the contents of this directory to a directory on your computer. Start up a terminal and go to the local directory. Issue the following command:
+Copy the contents of this directory to a directory on your computer. Start up a terminal and cd to the local directory. Issue the following command:
 
 $ tsc @files --target ES5 --out connect4.js
 
