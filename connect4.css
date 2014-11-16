@@ -1,0 +1,678 @@
+/* connect4.css */
+
+* {
+    margin           : 0px; 
+    padding          : 0px; 
+    list-style       : none;
+}
+body {
+    /*
+    text-align        : center;
+    background-size   : 100% 100%;
+    background-repeat : no-repeat;
+    overflow          : hidden;
+    */
+}
+.connect4 {
+    /*
+    border-width      : 25px;
+    border-style      : solid solid none solid;
+    border-color      : green;
+    border-radius     : 23px;
+    height            : 350px;
+    position          : absolute;
+    position          : relative;
+    background        : linear-gradient(to bottom right, white, blue);
+    background        : linear-gradient(to bottom right, white, lightgreen);
+    background        : linear-gradient(to bottom right, palegoldenrod, darkgoldenrod);
+    background        : linear-gradient(to bottom right, yellow, darkgoldenrod);
+    background        : linear-gradient(to bottom right, palegreen, olivedrab);
+    background-color  : blue;
+    */             
+    width             : 410px;
+    height            : 360px;
+    margin-top        : 255px;
+    margin-top        : 25px;
+    margin-left       : auto;
+    margin-right      : auto;
+    border-color      : green;
+    border-radius     : 30px;
+    border-radius     : 90px 90px 90px 90px;
+    border-radius     : 50px 50px 50px 50px;
+    border-width      : 5px 25px 15px 25px;
+    border-width      : 22px;
+    border-radius     : 25px 25px 0px 0px;
+    border-radius     : 25px;
+    border-width      : 0px;
+    border-style      : solid solid solid solid;
+    background-size   : 410px 360px;
+}
+.field {
+    /*
+    margin-left       : auto;
+    margin-right      : auto;
+    opacity           : .5;
+    margin-left       : 125px;
+    background-color  : green;
+    */
+    position          : absolute;
+    position          : relative;
+    top               : -14px;
+    top               : -20px;
+    width             : 350px;
+    height            : 300px;
+    margin-left       : auto;
+    margin-right      : auto;
+}
+
+
+
+.jacket      { background-position : -300px    0px;    } /* no jacket, transparent */
+.jacket_     { background-position : -450px -100px;    } /* no jacket, transparent */
+.jacket_0    { background-position : -100px -100px;    } /* no jacket, transparent */
+.jacket_1    { background-position :    0px -100px;    } /* rood 4-op-een-rij fiche */
+.jacket_2    { background-position :  -50px -100px;    } /* geel 4-op-een-rij-fiche */
+.jacket_3    { background-position : -250px -100px;    } /* rood poker fiche  */
+.jacket_4    { background-position : -200px -100px;    } /* groen poker fiche */
+.jacket_5    { background-position : -150px -100px;    } /* blauwe bol */
+.jacket_6    { background-position : -100px -100px;    } /* rode bol   */
+.jacket_7    { background-position : -300px -100px;    } /* blauw poker fiche */
+.jacket_8    { background-position : -350px -100px;    } /* wit poker fiche  */
+.jacket_9    { background-position : -400px -100px;    } /* zwart poker fiche  */
+
+.shed_1      { background      : linear-gradient(to bottom right, white    , lightgreen);    }
+.shed_2      { background-image: url('peter.png');  }
+.shed_3      { background-image: url('');           }
+.shed_5      { background-image: url('church.jpg'); }
+.shed_5      { background      : linear-gradient(to bottom right, palegreen, darkgoldenrod); }
+.shed_8      { background      : linear-gradient(to bottom right, white    , darkgoldenrod); }
+.shed_8      { background-image: url('landscape.jpg'); }
+.shed_5      { background-image: url('seurat.jpg');    }
+.shed_5      { background-color: white;                }
+.shed_4      { background-image: url('peter.png');     }
+.shed_6      { background-color: lightblue;            }
+.shed_7      { background-color: lightyellow;          }
+.shed_8      { background-color: white;                }
+.shed_9      { background-image: url('banana.jpg');    }
+.shed_10     { background-image: url('moon.jpg');      }
+.shed_11     { background-image: url('provence.jpg');  }
+.shed_12     { background-image: url('wall.jpg');      }
+            
+.gate_1     { border-color: rgba( 51,  85, 230, .7);  }
+.gate_2     { border-color: rgba(255, 255, 255, .0);  }
+.gate_3     { border-color: rgba(128, 128, 128, .5);  }
+.gate_4     { border-color: rgba(  0,   0,   0, .4);  }
+.gate_5     { border-color: rgba(  0,   0,   0, .4);  }
+
+.garden_1 li { background-position :    0px      0px;  }
+.garden_2 li { background-position : -450px   -100px;  }
+.garden_3 li { background-position : -100px      0px;  }
+.garden_4 li { background-position : -150px      0px;  }
+.garden_5 li { background-position : -200px      0px;  }
+
+    /* 
+    position            : absolute;          
+    position            : relative;          
+    height              : 800px;
+    margin              : 8px;
+    position            : relative;
+    height              : 100%;
+    height              : 600px;
+    width               : 800px;
+    padding-top         : 63px;
+    width               : 100%;
+    background-color    : white;
+    background-color    : green;
+    background-size     : 800px 600px;
+    background-repeat   : no-repeat;
+    background-color    : yellow;
+    background-color    : red;
+    height              : 50px;
+    width               : 50px;
+    float               : left;
+    position            : relative;
+    opacity             : 0.9;
+    background-color    : pink;
+    background-position : -350px -250px;
+    margin-left         : 10px;
+    position            : absolute;
+    position            : relative;
+    background-image    : url('moon.jpg');
+    height              : 500px;
+    bottom              : -200px;
+    top                 : 0px;
+    border-width        : 25px;
+    clear               : both;
+    margin-left         : auto;
+    margin-right        : auto;
+    background-color    : white;
+    background-color    : yellow;
+    width               : 250px;
+    height              : 10000px;
+    position            : absolute;
+    position            : relative;
+    text-align          : center;
+    z-index             : 1;
+    margin-top          : 350px;
+    */
+
+
+
+
+
+
+
+
+.bunny, 
+.bird, 
+.garden, 
+.scarecrow {
+    /*
+    background-color    : blue;
+    background-color    : red;
+    background-color    : silver;
+    background-color    : yellow;
+    position            : relative;
+    position            : relative;
+    border-color        : red;
+    border-radius       : 30px;
+    border-radius       : 30px 15px 10px 40px;
+    border-width        : 15px 25px 35px 15px;
+    border-width        : 22px;
+    border-style        : solid solid solid solid;
+    margin-left         : auto;
+    margin-right        : auto;
+    */
+    width               : 350px;
+    height              : 300px;
+    position            : relative;
+    position            : absolute;
+
+}
+
+
+.peter {
+    /*
+    background-color    : green;
+    margin-left         : auto;
+    margin-right        : auto;
+    position            : absolute;
+    */
+    margin-left         : auto;
+    margin-right        : auto;
+    position            : absolute;
+    position            : relative;
+    width               : 350px;
+    height              : 50px;
+}
+.peter li {
+    /*
+    margin-top          : 150px;
+    padding-top         : 150px;
+    position            : absolute;
+    width               : 400px;
+    height              : 400px;
+    position            : absolute;
+    background-color    : blue;
+    background-color    : green;
+    background-color    : yellow;
+    background-position : 0px -100px;
+    */
+    position            : relative;
+    position            : absolute;
+    background-image    : url(connect4.png);
+    width               : 50px;
+    height              : 50px;
+}
+.garden {
+    /*
+    position            : absolute;
+    position            : relative;
+    */
+    left                : -15px;
+}
+.garden li{
+    /*
+    position         : relative;
+    top              : -450px;
+    opacity          : .5;
+    */                  
+    background-image    : url(connect4.png);
+    float               : left;
+    width               : 50px;
+    height              : 50px;
+    position            : absolute;
+    position            : relative;
+}
+
+.gate {
+    /*
+    margin-left         : auto;
+    margin-right        : auto;
+    border-style        : solid solid none solid;
+    border-width        : 14px 8px 21px 13px; 
+    top                 : -265px;
+    width               : 350px;
+    height              : 300px;
+    position            : relative;
+    position            : absolute;
+    margin-left         : -15px;
+    */                  
+    margin-top          : -15px;
+    border-width        : 15px;
+    border-radius       : 15px 15px 0px 0px;
+    border-radius       : 15px;
+    border-style        : solid solid solid solid;
+}
+
+.bunny { 
+    /*
+    height              : 300px;
+    background-color    : yellow;
+    position            : relative;
+    position            : absolute;
+    background-color    : yellow;
+    background-color    : red;
+    position            : relative;
+    position            : absolute;
+    background-color    : yellow;
+    */
+}
+.bunny li {
+    /*
+    float               : left;
+    background-color    : purple;
+    display             : none;
+    */
+    position            : relative;
+    position            : absolute;
+    background-image    : url(connect4.png);
+    top                 :-50px;
+    width               : 50px;
+    height              : 50px;
+    opacity             : 0;
+}
+
+.scarecrow {
+    /*
+    */
+}
+.scarecrow li {
+    /*
+    position            : relative;
+    top                 : -450px;
+    background-position : -34px -89px;
+    background-color    : pink;
+    background-color    : green;
+    opacity             : 0;
+    opacity             : .4;
+    display             : block;
+    display             : none;
+    z-index             : 3;
+    */                  
+    background-image    : url(connect4.png);
+    float               : left;
+    width               : 50px;
+    height              : 50px;
+    position            : absolute;
+    position            : relative;
+    visibility          : hidden;
+}
+
+.walk {
+    /*
+    background-color  : yellow;
+    z-index          : 1;
+    */
+    position         : relative;
+    opacity          : .6; 
+    position         : absolute;
+    top              : -50px;
+    width            : 350px;
+}
+.walk li {
+    /*
+    position            : absolute;
+    border-style        : solid;
+    background-color    : green;
+    float               : left;
+    */
+    float               : left;
+    position            : relative;
+    width               : 50px;
+    height              : 400px;
+}
+
+.veggie {
+    /*
+    width               : 25px;
+    height              : 25px;
+    float               : left;
+    */
+    position            : absolute;
+    position            : relative;
+    background-position : -25px -175px;
+    top                 : 318px;
+    top                 : 300px;
+    top                 : -25px;
+    top                 : 0px;
+    top                 : 320px;
+    top                 : 335px;
+    margin-right        : 10px;
+}
+.veggie li {
+    background-image    : url(connect4.png);
+    width               : 25px;
+    height              : 25px;
+    float               : left; 
+    margin-right        : 17px;
+}
+.veggie li div {
+    /*
+    background-color    : green;
+    */
+    opacity             : 0;
+    position            : absolute;
+    background-image    : url(connect4.png);
+    width               : 25px;
+    height              : 25px;
+}
+.veggie li:nth-child(1)     { background-position:    0px -150px; }
+.veggie li:nth-child(2)     { background-position:  -25px -150px; }
+.veggie li:nth-child(3)     { background-position:  -50px -150px; }
+.veggie li:nth-child(4)     { background-position:  -75px -150px; }
+.veggie li:nth-child(5)     { background-position: -100px -150px; }
+.veggie li:nth-child(6)     { background-position: -125px -150px; }
+.veggie li:nth-child(1) div { background-position:    0px -175px; }
+.veggie li:nth-child(2) div { background-position:  -25px -175px; }
+.veggie li:nth-child(3) div { background-position:  -50px -175px; }
+.veggie li:nth-child(4) div { background-position:  -75px -175px; }
+.veggie li:nth-child(5) div { background-position: -100px -175px; }
+.veggie li:nth-child(6) div { background-position: -125px -175px; }
+
+.can {
+    /*
+    clear               : left;
+    background-color    : yellow;
+    */
+    position            : absolute;
+    position            : relative;
+    background-image    : url(connect4.png);
+    width               : 25px;
+    height              : 25px;
+    background-position : -200px -175px;
+    float               : left;
+    margin-right        : 17px;
+    top                 : 350px;
+    top                 : -25px;
+    top                 : 25px;
+    top                 : 320px;
+    top                 : 335px;
+}
+.can:hover { background-position: -225px -175px; }
+
+.blackberry {
+    /*
+    z-index             : 1;  
+    background-color    : red;
+    background-color    : yellow;
+    margin-left         : auto;
+    margin-right        : auto;
+    */
+    position            : relative;
+    top                 : 316px;
+    top                 : 290px;
+    top                 : 0px;
+    top                 : 318px;
+    top                 : 335px;
+    float               : right;
+    width               : 50px;
+    height              : 75px;
+}
+.blackberry li {
+    background-image    : url(connect4.png);
+    width               : 25px;
+    height              : 25px;
+    float               : left;
+}
+.blackberry li:nth-child(even)       { background-position: -175px -150px; }
+.blackberry li:nth-child(odd)        { background-position: -150px -150px; }
+.blackberry li:nth-child(even):hover { background-position: -175px -175px; }
+.blackberry li:nth-child(odd):hover  { background-position: -150px -175px; }
+
+.shoes {
+    /*
+    float               : right;
+    background-color    : green;
+    */
+    opacity             : 0;
+    position            : relative;
+    position            : absolute;
+    background-image    : url(connect4.png);
+    width               : 50px;
+    height              : 50px;
+    top                 : 5px; 
+    left                : 345px
+}
+.shoes_i { background-position : -450px    0px; }
+.shoes_o { background-position : -450px -100px; }
+.shoes_u { background-position : -450px  -50px; }
+
+.bird { 
+    /*
+    z-index          : 1;  
+    position         : relative;          
+    opacity          : 1; 
+    opacity          : .1; 
+    */
+    border-color        : blue;
+}
+
+.bird li {
+    position         : absolute;
+    opacity          : 0; 
+}
+
+.bird_d1 { width: 292px; height: 292px; background-position: -400px -100px; }
+.bird_d2 { width: 292px; height: 292px; background-position: -100px -100px; }
+.bird_h  { width: 250px; height: 100px; background-position:    0px    0px; }
+.bird_v  { width: 100px; height: 250px; background-position:    0px -100px; }
+
+.bird_i li { background-image : url(bird_i.png); }
+.bird_u li { background-image : url(bird_u.png); }
+
+.bird li:nth-child( 1) { left: -25px; top: -25px; }
+.bird li:nth-child( 2) { left:  25px; top: -25px; }
+.bird li:nth-child( 3) { left:  75px; top: -25px; }
+.bird li:nth-child( 4) { left: 125px; top: -25px; }
+.bird li:nth-child( 5) { left: -25px; top:  25px; }
+.bird li:nth-child( 6) { left:  25px; top:  25px; }
+.bird li:nth-child( 7) { left:  75px; top:  25px; }
+.bird li:nth-child( 8) { left: 125px; top:  25px; }
+.bird li:nth-child( 9) { left: -25px; top:  75px; }
+.bird li:nth-child(10) { left:  25px; top:  75px; }
+.bird li:nth-child(11) { left:  75px; top:  75px; }
+.bird li:nth-child(12) { left: 125px; top:  75px; }
+.bird li:nth-child(13) { left: -25px; top: 125px; }
+.bird li:nth-child(14) { left:  25px; top: 125px; }
+.bird li:nth-child(15) { left:  75px; top: 125px; }
+.bird li:nth-child(16) { left: 125px; top: 125px; }
+.bird li:nth-child(17) { left: -25px; top: 175px; }
+.bird li:nth-child(18) { left:  25px; top: 175px; }
+.bird li:nth-child(19) { left:  75px; top: 175px; }
+.bird li:nth-child(20) { left: 125px; top: 175px; }
+.bird li:nth-child(21) { left: -25px; top: 225px; }
+.bird li:nth-child(22) { left:  25px; top: 225px; }
+.bird li:nth-child(23) { left:  75px; top: 225px; }
+.bird li:nth-child(24) { left: 125px; top: 225px; }
+.bird li:nth-child(25) { left: -25px; top: -25px; }
+.bird li:nth-child(26) { left:  25px; top: -25px; }
+.bird li:nth-child(27) { left:  75px; top: -25px; }
+.bird li:nth-child(28) { left: 125px; top: -25px; }
+.bird li:nth-child(29) { left: 175px; top: -25px; }
+.bird li:nth-child(30) { left: 225px; top: -25px; }
+.bird li:nth-child(31) { left: 275px; top: -25px; }
+.bird li:nth-child(32) { left: -25px; top:  25px; }
+.bird li:nth-child(33) { left:  25px; top:  25px; }
+.bird li:nth-child(34) { left:  75px; top:  25px; }
+.bird li:nth-child(35) { left: 125px; top:  25px; }
+.bird li:nth-child(36) { left: 175px; top:  25px; }
+.bird li:nth-child(37) { left: 225px; top:  25px; }
+.bird li:nth-child(38) { left: 275px; top:  25px; }
+.bird li:nth-child(39) { left: -25px; top:  75px; }
+.bird li:nth-child(40) { left:  25px; top:  75px; }
+.bird li:nth-child(41) { left:  75px; top:  75px; }
+.bird li:nth-child(42) { left: 125px; top:  75px; }
+.bird li:nth-child(43) { left: 175px; top:  75px; }
+.bird li:nth-child(44) { left: 225px; top:  75px; }
+.bird li:nth-child(45) { left: 275px; top:  75px; }
+.bird li:nth-child(46) { left: -46px; top: -46px; }
+.bird li:nth-child(47) { left:   4px; top: -46px; }
+.bird li:nth-child(48) { left:  54px; top: -46px; }
+.bird li:nth-child(49) { left: 104px; top: -46px; }
+.bird li:nth-child(50) { left: -46px; top:   4px; }
+.bird li:nth-child(51) { left:   4px; top:   4px; }
+.bird li:nth-child(52) { left:  54px; top:   4px; }
+.bird li:nth-child(53) { left: 104px; top:   4px; }
+.bird li:nth-child(54) { left: -46px; top:  54px; }
+.bird li:nth-child(55) { left:   4px; top:  54px; }
+.bird li:nth-child(56) { left:  54px; top:  54px; }
+.bird li:nth-child(57) { left: 104px; top:  54px; }
+.bird li:nth-child(58) { left: -46px; top: -46px; }
+.bird li:nth-child(59) { left:   4px; top: -46px; }
+.bird li:nth-child(60) { left:  54px; top: -46px; }
+.bird li:nth-child(61) { left: 104px; top: -46px; }
+.bird li:nth-child(62) { left: -46px; top:   4px; }
+.bird li:nth-child(63) { left:   4px; top:   4px; }
+.bird li:nth-child(64) { left:  54px; top:   4px; }
+.bird li:nth-child(65) { left: 104px; top:   4px; }
+.bird li:nth-child(66) { left: -46px; top:  54px; }
+.bird li:nth-child(67) { left:   4px; top:  54px; }
+.bird li:nth-child(68) { left:  54px; top:  54px; }
+.bird li:nth-child(69) { left: 104px; top:  54px; }
+
+.bunny li:nth-child( 1) { left:   0px; }
+.bunny li:nth-child( 2) { left:  50px; }
+.bunny li:nth-child( 3) { left: 100px; }
+.bunny li:nth-child( 4) { left: 150px; }
+.bunny li:nth-child( 5) { left: 200px; }
+.bunny li:nth-child( 6) { left: 250px; }
+.bunny li:nth-child( 7) { left: 300px; }
+.bunny li:nth-child( 8) { left:   0px; }
+.bunny li:nth-child( 9) { left:  50px; }
+.bunny li:nth-child(10) { left: 100px; }
+.bunny li:nth-child(11) { left: 150px; }
+.bunny li:nth-child(12) { left: 200px; }
+.bunny li:nth-child(13) { left: 250px; }
+.bunny li:nth-child(14) { left: 300px; }
+.bunny li:nth-child(15) { left:   0px; }
+.bunny li:nth-child(16) { left:  50px; }
+.bunny li:nth-child(17) { left: 100px; }
+.bunny li:nth-child(18) { left: 150px; }
+.bunny li:nth-child(19) { left: 200px; }
+.bunny li:nth-child(20) { left: 250px; }
+.bunny li:nth-child(21) { left: 300px; }
+.bunny li:nth-child(22) { left:   0px; }
+.bunny li:nth-child(23) { left:  50px; }
+.bunny li:nth-child(24) { left: 100px; }
+.bunny li:nth-child(25) { left: 150px; }
+.bunny li:nth-child(26) { left: 200px; }
+.bunny li:nth-child(27) { left: 250px; }
+.bunny li:nth-child(28) { left: 300px; }
+.bunny li:nth-child(29) { left:   0px; }
+.bunny li:nth-child(30) { left:  50px; }
+.bunny li:nth-child(31) { left: 100px; }
+.bunny li:nth-child(32) { left: 150px; }
+.bunny li:nth-child(33) { left: 200px; }
+.bunny li:nth-child(34) { left: 250px; }
+.bunny li:nth-child(35) { left: 300px; }
+.bunny li:nth-child(36) { left:   0px; }
+.bunny li:nth-child(37) { left:  50px; }
+.bunny li:nth-child(38) { left: 100px; }
+.bunny li:nth-child(39) { left: 150px; }
+.bunny li:nth-child(40) { left: 200px; }
+.bunny li:nth-child(41) { left: 250px; }
+.bunny li:nth-child(42) { left: 300px; }
+
+.mcgregor {
+    /*
+    */
+    background-image : url(connect4.png);
+    position         : absolute;
+    pointer-events   : none;
+    width            : 50px;
+    height           : 50px;
+    opacity          : 0;
+}
+
+.millions {
+    /*
+    border-style     : solid;
+    */
+    clear: both;
+    margin-left      : auto;
+    margin-right     : auto;
+}
+.dashboard {
+    /*
+    height            : 600px;
+    width             : 100px;
+    margin-left       : auto;
+    margin-right      : auto;
+    */
+    width             : 160px;
+    height            : 60px;
+    position          : absolute;
+    position          : relative;
+    border-color      : lightgrey;
+    border-style      : solid solid none solid;
+}
+.dashboard  {
+    background-color  : green; 
+    width             : 640px;
+    height            : 640px;
+}
+
+
+    /*
+    *
+    *
+    *
+    position            : relative;
+    background-color    : blue;
+    background-image    : url(connect4.png);
+    width               : 50px;
+    height              : 50px;
+    position            : absolute;
+    position            : relative;
+    position            : absolute;
+    position: relative; 
+    background-color    : blue;
+    position            : absolute;
+    background-color    : green;
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    */
+
+
+.help{
+    position  : relative;
+    position  : absolute;
+    top       : 10px;
+    left      : 10px;
+    width     : 200px;
+    height    : 300px;
+    overflow  : scroll;
+}
+
+
+
+
+
+
+
