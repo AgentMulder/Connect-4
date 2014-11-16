@@ -92,8 +92,8 @@ Background
        with the Peter Rabbit methaphore, parts are named after clearly recognizable entities 
        and preferably used as container to hold other parts, like the Motor-object that 
        contains a Cylinder, Fuel and Gear, but does nothing with it. Its sole task is to
-       hold its items and become part of the narration
-       .
+       hold its items and become part of the narration.
+       
        Scarecrow contains Jacket and Shoes, but does not act on them. As aspected.
   
        At risk of overstretching the metaphores, I tried my best to use only simple nouns. I 
