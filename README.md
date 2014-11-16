@@ -1,3 +1,6 @@
+http://www.sympad.nl/connect4/
+
+
 Connect-4
 =========
 
