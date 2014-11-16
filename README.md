@@ -1,4 +1,4 @@
-http://www.sympad.nl/connect4/
+See http://www.sympad.nl/connect4/ for a working example
 
 
 Connect-4
