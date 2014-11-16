@@ -115,7 +115,7 @@ Background
        I would be great to see this turn into a 'real' game, that people subscribe to, perhaps 
        even pay for, allowing multi player games, high scores and achievements. For fun and 
        profit, because I did write this program for fun, to better my skills and to give
-       aspiring programmers something to chew on. But also because I need a job. Pleas help 
+       aspiring programmers something to chew on. But also because I need a job. Please help 
        turn lovely little games, like this one, into something that someday generates cash, 
        somehow. So that I can do fun stuff with the money :-) 
        
